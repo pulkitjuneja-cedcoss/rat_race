@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rat race</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Texturina:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="rat1.css">
+    
+</head>
+<body >
+
+    <div class = "bg">
+        <div class = "score_box_container">
+            <div class = "score_box">
+                <h2 id = "heading1" style="color: white; padding-top: 5%; margin-left: 5%;">Your score is: <span id = "score" style = "font-size: 140%;"></span></h2>
+                <h2 id = "heading2" style="color: white;margin-left: 5%; ">Highest score is: <span id = "highestscore" style = "font-size: 140%;"></span></h2>
+                <span id = "chances_left_content" style = "font-weight: bold;">Chances Left: <span id ="chancesleft" style ="font-size:120%">3</span></span>
+                <span id = "time_left_content" style = "font-weight: bold;">Time Left: <span id ="time_left" style ="font-size:120%">60s</span></span>
+
+            </div>
+
+        </div>   
+
+        <p id = "final_score" ></p>
+        
+        <div class = "box">
+            <div class = "inner-box que" id = "1" onclick = "score(1)">
+
+            </div>
+            <div class = "inner-box que" id = "2" onclick = "score(2)">
+                
+            </div>
+            <div class = "inner-box que" id = "3" onclick = "score(3)">
+                
+            </div>
+            <div class = "inner-box que" id = "4" onclick = "score(4)">
+                
+            </div>
+            <div class = "inner-box que" id = "5" onclick = "score(5)">
+                
+            </div>
+            <div class = "inner-box que" id = "6" onclick = "score(6)">
+                
+            </div>
+            <div class = "inner-box que" id = "7" onclick = "score(7)">
+                
+            </div>
+            <div class = "inner-box que" id = "8" onclick = "score(8)">
+                
+            </div>
+            <div class = "inner-box que" id = "9" onclick = "score(9)">
+                
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+                <button class="b1" id = "btn1" type = "button" onclick="start()">  Start</button>
+
+                <button class="b1" id = "btn2" type = "button" onclick="pause()">Pause</button>
+
+                <button class="b1" id = "resume" type = "button" onclick="resume()">Resume</button>
+
+                <button class="b1" id = "btn3" type = "button" onclick="quit()">Quit</button>
+
+        </div>
+
+    </div>    
+
+    <script src="rat.js"></script>
+    
+</body>
+</html>

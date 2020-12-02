@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    background-image: url("Rodents_800.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    
+}
+
+
+.front{   
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+    -webkit-box-reflect: below -12px linear-gradient( transparent, rgba(0,0,0,0.4)) ;
+    
+
+   
+}
+.front span{
+    position: relative;
+    display:inline-block;
+    font-size: 450%;
+    animation: animate1 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+
+}
+
+@keyframes animate1{
+
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+
+}
+
+.tagline{
+    text-align: center; font-size: 300%; margin-top: 0%;
+}
+
+.runner{
+    margin-top: 7%;
+    background-image: url("sprites-removebg-preview.png");
+    width:210px;
+    height:150px;
+    animation:  run 1s steps(6) infinite,
+    animate3 3s linear infinite;
+}
+
+@keyframes run{
+    0%{
+        background-position: 0px;
+    }
+
+    100%{
+        background-position: 1260px;
+    }
+}
+
+@keyframes animate3{
+
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(1200px);
+    }
+}
+
+.cheese{ position: absolute;
+    width: 25%; height: 25%; margin-left: 70%; margin-top: -4%;
+}
+
+
+.cheese2{ position: absolute;
+    width: 35%; height: 35%; margin-left: -3%; margin-top: -4%;
+}
+
+.play{
+    font-size: 130%; padding: 1% 2%; margin-left: 42%; margin-top: 8%; background: transparent; border:2px solid black; 
+    border-radius: 10px; font-weight: bold;
+}
+
+
